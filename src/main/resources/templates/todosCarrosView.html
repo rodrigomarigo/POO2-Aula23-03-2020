@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro View</title>
+</head>
+<body>
+    <h1>Carros cadastrados</h1>
+    <tr th:each="carro : ${carros}">
+        <td><span th:text="${carro.nome}"> Nome </span></td>
+        <td><span th:text="${carro.marca}"> Marca </span></td>
+        </br>
+    </tr>
+</body>
+</html>
